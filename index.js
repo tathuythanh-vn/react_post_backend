@@ -2,6 +2,7 @@ const compression = require('compression')
 const express = require('express')
 const app = express()
 const globalRoute = require("./routes/globalRoute")
+const cors = require('cors')
 
 app.use(compression())
 app.use(cors({
