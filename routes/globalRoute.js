@@ -4,10 +4,10 @@ const users = require("../mockData/users");
 const router = express.Router();
 
 router.get("/users", (req, res) => {
-    res.send(posts);
+    res.json(users);
 })
 router.get("/posts", (req, res) => {
-    res.json(users);
+    res.json(posts);
 })
 
 module.exports = router;
